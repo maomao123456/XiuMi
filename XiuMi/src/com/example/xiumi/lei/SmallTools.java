@@ -28,6 +28,7 @@ public class SmallTools extends Activity{
 	 * 验证网络状态
 	 * (WiFi只能验证是否连接上 不能验证是否能上网)
 	 */
+	@SuppressWarnings("unused")
 	private boolean checkNetwork() {
 		ConnectivityManager connManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 		if (connManager.getActiveNetworkInfo() != null) {
